@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7375A6FF2B8FA473004A4809 /* NewMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7375A6FE2B8FA473004A4809 /* NewMain.swift */; };
 		CD4784A62B83680B0009561B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4784A52B83680B0009561B /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		730955892B8CAF6300654917 /* Group4.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Group4.xcodeproj; path = ../../../Desktop/Group4/Group4.xcodeproj; sourceTree = "<group>"; };
+		7375A6FE2B8FA473004A4809 /* NewMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMain.swift; sourceTree = "<group>"; };
 		CD4784A22B83680B0009561B /* Group4Project */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Group4Project; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD4784A52B83680B0009561B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,6 +80,7 @@
 			children = (
 				730955892B8CAF6300654917 /* Group4.xcodeproj */,
 				CD4784A52B83680B0009561B /* main.swift */,
+				7375A6FE2B8FA473004A4809 /* NewMain.swift */,
 			);
 			path = Group4Project;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD4784A62B83680B0009561B /* main.swift in Sources */,
+				7375A6FF2B8FA473004A4809 /* NewMain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
