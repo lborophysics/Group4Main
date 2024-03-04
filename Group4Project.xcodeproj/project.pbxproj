@@ -81,8 +81,8 @@
 			isa = PBXGroup;
 			children = (
 				730955892B8CAF6300654917 /* Group4.xcodeproj */,
-				7375A7002B8FAAEB004A4809 /* FileWriter.swift */,
 				CD4784A52B83680B0009561B /* main.swift */,
+				7375A7002B8FAAEB004A4809 /* FileWriter.swift */,
 				7375A6FE2B8FA473004A4809 /* NewMain.swift */,
 			);
 			path = Group4Project;
