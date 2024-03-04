@@ -7,8 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7375A6FF2B8FA473004A4809 /* NewMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7375A6FE2B8FA473004A4809 /* NewMain.swift */; };
+		7375A7012B8FAAEB004A4809 /* FileWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7375A7002B8FAAEB004A4809 /* FileWriter.swift */; };
 		CD4784A62B83680B0009561B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4784A52B83680B0009561B /* main.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7309558D2B8CAF6300654917 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 730955892B8CAF6300654917 /* Group4.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7309557F2B8CAF6300654917;
+			remoteInfo = Group4;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		CD4784A02B83680B0009561B /* CopyFiles */ = {
@@ -23,7 +35,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		CD4784A22B83680B0009561B /* Group4Tester */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Group4Tester; sourceTree = BUILT_PRODUCTS_DIR; };
+		730955892B8CAF6300654917 /* Group4.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Group4.xcodeproj; path = ../../../Desktop/Group4/Group4.xcodeproj; sourceTree = "<group>"; };
+		7375A6FE2B8FA473004A4809 /* NewMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMain.swift; sourceTree = "<group>"; };
+		7375A7002B8FAAEB004A4809 /* FileWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileWriter.swift; sourceTree = "<group>"; };
+		CD4784A22B83680B0009561B /* Group4Project */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Group4Project; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD4784A52B83680B0009561B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -38,10 +53,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7309558A2B8CAF6300654917 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7309558E2B8CAF6300654917 /* Group4 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		CD4784992B83680B0009561B = {
 			isa = PBXGroup;
 			children = (
-				CD4784A42B83680B0009561B /* Group4Tester */,
+				CD4784A42B83680B0009561B /* Group4Project */,
 				CD4784A32B83680B0009561B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,25 +72,28 @@
 		CD4784A32B83680B0009561B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CD4784A22B83680B0009561B /* Group4Tester */,
+				CD4784A22B83680B0009561B /* Group4Project */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CD4784A42B83680B0009561B /* Group4Tester */ = {
+		CD4784A42B83680B0009561B /* Group4Project */ = {
 			isa = PBXGroup;
 			children = (
+				730955892B8CAF6300654917 /* Group4.xcodeproj */,
+				7375A7002B8FAAEB004A4809 /* FileWriter.swift */,
 				CD4784A52B83680B0009561B /* main.swift */,
+				7375A6FE2B8FA473004A4809 /* NewMain.swift */,
 			);
-			path = Group4Tester;
+			path = Group4Project;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CD4784A12B83680B0009561B /* Group4Tester */ = {
+		CD4784A12B83680B0009561B /* Group4Project */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CD4784A92B83680B0009561B /* Build configuration list for PBXNativeTarget "Group4Tester" */;
+			buildConfigurationList = CD4784A92B83680B0009561B /* Build configuration list for PBXNativeTarget "Group4Project" */;
 			buildPhases = (
 				CD47849E2B83680B0009561B /* Sources */,
 				CD47849F2B83680B0009561B /* Frameworks */,
@@ -77,9 +103,9 @@
 			);
 			dependencies = (
 			);
-			name = Group4Tester;
+			name = Group4Project;
 			productName = Group4Tester;
-			productReference = CD4784A22B83680B0009561B /* Group4Tester */;
+			productReference = CD4784A22B83680B0009561B /* Group4Project */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -97,7 +123,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CD47849D2B83680B0009561B /* Build configuration list for PBXProject "Group4Tester" */;
+			buildConfigurationList = CD47849D2B83680B0009561B /* Build configuration list for PBXProject "Group4Project" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -108,19 +134,37 @@
 			mainGroup = CD4784992B83680B0009561B;
 			productRefGroup = CD4784A32B83680B0009561B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7309558A2B8CAF6300654917 /* Products */;
+					ProjectRef = 730955892B8CAF6300654917 /* Group4.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
-				CD4784A12B83680B0009561B /* Group4Tester */,
+				CD4784A12B83680B0009561B /* Group4Project */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7309558E2B8CAF6300654917 /* Group4 */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = Group4;
+			remoteRef = 7309558D2B8CAF6300654917 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CD47849E2B83680B0009561B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7375A7012B8FAAEB004A4809 /* FileWriter.swift in Sources */,
 				CD4784A62B83680B0009561B /* main.swift in Sources */,
+				7375A6FF2B8FA473004A4809 /* NewMain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,7 +305,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CD47849D2B83680B0009561B /* Build configuration list for PBXProject "Group4Tester" */ = {
+		CD47849D2B83680B0009561B /* Build configuration list for PBXProject "Group4Project" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CD4784A72B83680B0009561B /* Debug */,
@@ -270,7 +314,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CD4784A92B83680B0009561B /* Build configuration list for PBXNativeTarget "Group4Tester" */ = {
+		CD4784A92B83680B0009561B /* Build configuration list for PBXNativeTarget "Group4Project" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CD4784AA2B83680B0009561B /* Debug */,
