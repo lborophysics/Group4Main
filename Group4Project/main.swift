@@ -6,6 +6,9 @@
 //
 import Foundation
 
+// Variables
+let basename = "snapshot"
+var frame = 0
 let SIZE = 200
 var ez = Array(repeating: 0.0, count: SIZE)
 var hy = Array(repeating: 0.0, count: SIZE)
@@ -29,7 +32,8 @@ for qTime in 0..<maxTime {
    // Hardwire a source node
    ez[0] = exp(-(Double(qTime) - 30.0) * (Double(qTime) - 30.0) / 100.0)
 
-    
+    generateSnapshot(qTime: qTime)
+
     fileout.append_data(data: "\(ez[50])\n")
 }
  
