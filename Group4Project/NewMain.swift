@@ -34,4 +34,4 @@ public struct EMfield1D{
         
         
     }
-    
+}
