@@ -10,6 +10,7 @@
 		7375A6FF2B8FA473004A4809 /* NewMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7375A6FE2B8FA473004A4809 /* NewMain.swift */; };
 		7375A7012B8FAAEB004A4809 /* FileWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7375A7002B8FAAEB004A4809 /* FileWriter.swift */; };
 		CD4784A62B83680B0009561B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4784A52B83680B0009561B /* main.swift */; };
+		E4612B4D2B98CA3000E329A4 /* updating ez & hy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4612B4C2B98CA3000E329A4 /* updating ez & hy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		7375A7002B8FAAEB004A4809 /* FileWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileWriter.swift; sourceTree = "<group>"; };
 		CD4784A22B83680B0009561B /* Group4Project */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Group4Project; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD4784A52B83680B0009561B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		E4612B4C2B98CA3000E329A4 /* updating ez & hy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "updating ez & hy.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				7375A7002B8FAAEB004A4809 /* FileWriter.swift */,
 				CD4784A52B83680B0009561B /* main.swift */,
 				7375A6FE2B8FA473004A4809 /* NewMain.swift */,
+				E4612B4C2B98CA3000E329A4 /* updating ez & hy.swift */,
 			);
 			path = Group4Project;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7375A7012B8FAAEB004A4809 /* FileWriter.swift in Sources */,
+				E4612B4D2B98CA3000E329A4 /* updating ez & hy.swift in Sources */,
 				CD4784A62B83680B0009561B /* main.swift in Sources */,
 				7375A6FF2B8FA473004A4809 /* NewMain.swift in Sources */,
 			);
