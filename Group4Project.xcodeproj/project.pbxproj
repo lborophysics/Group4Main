@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7300FC6B2B98CC8000E48132 /* generateSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7300FC6A2B98CC8000E48132 /* generateSnapshot.swift */; };
 		7375A6FF2B8FA473004A4809 /* NewMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7375A6FE2B8FA473004A4809 /* NewMain.swift */; };
 		7375A7012B8FAAEB004A4809 /* FileWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7375A7002B8FAAEB004A4809 /* FileWriter.swift */; };
 		CD4784A62B83680B0009561B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4784A52B83680B0009561B /* main.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7300FC6A2B98CC8000E48132 /* generateSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = generateSnapshot.swift; sourceTree = "<group>"; };
 		730955892B8CAF6300654917 /* Group4.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Group4.xcodeproj; path = ../../../Desktop/Group4/Group4.xcodeproj; sourceTree = "<group>"; };
 		7375A6FE2B8FA473004A4809 /* NewMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMain.swift; sourceTree = "<group>"; };
 		7375A7002B8FAAEB004A4809 /* FileWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileWriter.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				730955892B8CAF6300654917 /* Group4.xcodeproj */,
+				7300FC6A2B98CC8000E48132 /* generateSnapshot.swift */,
 				CD4784A52B83680B0009561B /* main.swift */,
 				7375A7002B8FAAEB004A4809 /* FileWriter.swift */,
 				7375A6FE2B8FA473004A4809 /* NewMain.swift */,
@@ -162,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7300FC6B2B98CC8000E48132 /* generateSnapshot.swift in Sources */,
 				7375A7012B8FAAEB004A4809 /* FileWriter.swift in Sources */,
 				CD4784A62B83680B0009561B /* main.swift in Sources */,
 				7375A6FF2B8FA473004A4809 /* NewMain.swift in Sources */,
