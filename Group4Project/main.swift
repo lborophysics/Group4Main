@@ -1,4 +1,4 @@
-    //
+//
 //  main.swift
 //  Group4Tester
 //
@@ -19,21 +19,17 @@ let fileout = FileWriter(fileName: "Electro.dat")
 fileout.write_data(data: "")
 
 for qTime in 0..<maxTime {
-   // Update magnetic field
-   for mm in 0..<(SIZE - 1) {
-       hy[mm] += (ez[mm + 1] - ez[mm]) / imp0
-   }
+// Update magnetic field
+update_magnetic(ez: ez, hy: &hy, imp0: imp0)
 
-   // Update electric field
-   for mm in 1..<SIZE {
-       ez[mm] += (hy[mm] - hy[mm - 1]) * imp0
-   }
+// Update electric field
+update_electric(ez: &ez, hy: hy, imp0: imp0)
 
-   // Hardwire a source node
-   ez[0] = exp(-(Double(qTime) - 30.0) * (Double(qTime) - 30.0) / 100.0)
+// Hardwire a source node
+ez[0] = exp(-(Double(qTime) - 30.0) * (Double(qTime) - 30.0) / 100.0)
 
-    generateSnapshot(qTime: qTime)
+generateSnapshot(qTime: qTime)
 
-    fileout.append_data(data: "\(ez[50])\n")
+fileout.append_data(data: "\(ez[50])\n")
 }
- 
+
