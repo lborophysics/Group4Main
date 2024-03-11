@@ -8,6 +8,7 @@ import Foundation
 
 // Variables
 let basename = "snapshot"
+let hardwireSourceNode = 50
 var frame = 0
 let SIZE = 200
 var ez = Array(repeating: 0.0, count: SIZE)
@@ -26,7 +27,7 @@ update_magnetic(ez: ez, hy: &hy, imp0: imp0)
 update_electric(ez: &ez, hy: hy, imp0: imp0)
 
 // Hardwire a source node
-ez[0] = exp(-(Double(qTime) - 30.0) * (Double(qTime) - 30.0) / 100.0)
+ez[hardwireSourceNode] += exp(-(Double(qTime) - 30.0) * (Double(qTime) - 30.0) / 100.0)
 
 generateSnapshot(qTime: qTime)
 
