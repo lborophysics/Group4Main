@@ -37,5 +37,5 @@ for qTime in 0..<maxTime {
     fileout.append_data(data: "\(ez[50])\n")
 }
 
-print("testing")
+
  
