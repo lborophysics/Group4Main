@@ -13,7 +13,7 @@ let SIZE = 200
 var ez = Array(repeating: 0.0, count: SIZE)
 var hy = Array(repeating: 0.0, count: SIZE)
 let imp0 = 377.0
-let maxTime = 250
+let maxTime = 450
 
 let fileout = FileWriter(fileName: "Electro.dat")
 fileout.write_data(data: "")

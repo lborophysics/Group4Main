@@ -18,7 +18,7 @@ public func generateSnapshot(qTime: Int){
        var data = ""
        // Copy
        for mm in 0 ..< SIZE {
-           data += "\(ez[mm])\n"
+           data += "\(ez[mm] + (Double(frame)-1))\n"
        }
        fileout.write_data(data: data)
    }
