@@ -20,19 +20,20 @@ let fileout = FileWriter(fileName: "Electro.dat")
 fileout.write_data(data: "")
 
 for qTime in 0..<maxTime {
-// Update magnetic field
-update_magnetic(ez: ez, hy: &hy, imp0: imp0)
+    let qTimeSubtract30 = Double(qTime) - 30.0
+    
+    // Update magnetic field
+    update_magnetic(ez: ez, hy: &hy, imp0: imp0, qTimeSubtract30: qTimeSubtract30)
+    
+    // Update electric field
+    update_electric(ez: &ez, hy: hy, imp0: imp0, qTimeSubtract30: qTimeSubtract30)
 
-// Update electric field
-update_electric(ez: &ez, hy: hy, imp0: imp0)
+    generateSnapshot(qTime: qTime)
 
-// Hardwire a source node
-ez[hardwireSourceNode] += exp(-(Double(qTime) - 30.0) * (Double(qTime) - 30.0) / 100.0)
-
-generateSnapshot(qTime: qTime)
-
-fileout.append_data(data: "\(ez[50])\n")
+    fileout.append_data(data: "\(ez[50])\n")
 }
 
+
+ 
 
  
