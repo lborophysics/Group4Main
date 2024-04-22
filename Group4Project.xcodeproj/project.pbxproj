@@ -84,8 +84,8 @@
 		CD4784A42B83680B0009561B /* Group4Project */ = {
 			isa = PBXGroup;
 			children = (
-				7325637A2B9F0E8500F9AE8F /* updating ez & hy.swift */,
 				730955892B8CAF6300654917 /* Group4.xcodeproj */,
+				7325637A2B9F0E8500F9AE8F /* updating ez & hy.swift */,
 				7300FC6A2B98CC8000E48132 /* generateSnapshot.swift */,
 				CD4784A52B83680B0009561B /* main.swift */,
 				7375A7002B8FAAEB004A4809 /* FileWriter.swift */,
