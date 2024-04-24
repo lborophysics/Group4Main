@@ -22,6 +22,7 @@ let LOSS = 0.02
 let relativePermittivity = 9.0
 let impedance = 377.0
 let total_steps = 450
+var materialData = ""
 
 var electric_field = Array(repeating: 0.0, count: SIZE)
 var magnetic_field = Array(repeating: 0.0, count: SIZE)
@@ -29,7 +30,6 @@ var ceze = Array(repeating: 0.0, count: SIZE)
 var cezh = Array(repeating: 0.0, count: SIZE)
 var chyh = Array(repeating: 0.0, count: SIZE)
 var chye = Array(repeating: 0.0, count: SIZE)
-
 
 //Initialise electric field
 InitialiseElectricField(Size: SIZE)
@@ -45,8 +45,10 @@ SetElectricFieldCoefficient(Size: SIZE, LOSS_LAYER: LOSS_LAYER, impedance: imped
 SetMagneticFieldCoefficient(Size: SIZE, LOSS_LAYER: LOSS_LAYER,
                             impedance: impedance, LOSS: LOSS)
 
-let fileout = FileWriter(fileName: "Electro.dat")
+let fileout = FileWriter(fileName: "Material.dat")
+materialData = "Material: Loss " + String(LOSS) + " Relative Permittivity " + String(relativePermittivity)
 fileout.write_data(data: "")
+fileout.append_data(data: materialData)
 
 for dt in 0..<total_steps {
     let dt_subtract30 = Double(dt) - 30.0
@@ -58,8 +60,6 @@ for dt in 0..<total_steps {
     update_electric(ez: &electric_field, hy: magnetic_field, imp0: impedance, dt_subtract30: dt_subtract30)
 
     generateSnapshot(dt: dt)
-
-    fileout.append_data(data: "\(electric_field[50])\n")
 }
 
 
