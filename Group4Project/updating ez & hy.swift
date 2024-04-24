@@ -11,8 +11,16 @@ func update_electric(ez: inout[Double], hy: [Double], imp0: Double, dt_subtract3
     let SIZE = ez.count
     ez[0] = ez[1]
     ez[SIZE - 1] = ez[SIZE - 2]
+    
     for mm in 1..<SIZE {
-        ez[mm] = ceze[mm] * ez[mm] + cezh[mm] * (hy[mm] - hy[mm - 1])
+        func update_refractive_index(n0: inout [Double], n2: Double, ez: [Double]){
+            let SIZE = n0.count
+            for mm in 0..<SIZE {
+                n0[mm] += n2 * pow(abs(ez[mm]),2)
+            }
+        }
+        let deltaHy = (hy[mm] - hy[mm - 1])
+        ez[mm] = ceze[mm] * ez[mm] + cezh[mm] * deltaHy
     }
     ez[hardwireSourceNode] += exp(-(dt_subtract30) * (dt_subtract30) / 100.0)
 }
