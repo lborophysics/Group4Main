@@ -32,43 +32,18 @@ var chye = Array(repeating: 0.0, count: SIZE)
 
 
 //Initialise electric field
-for mm in 0..<(SIZE){
-    electric_field[mm] = 0.0
-}
+InitialiseElectricField(Size: SIZE)
 
 //Initialise magnetic field
-for mm in 0..<(SIZE - 1){
-    magnetic_field[mm] = 0.0
-}
+InitialiseMagneticField(Size: SIZE)
 
 //set electric field coefficients
-for mm in 0..<(SIZE){
-    if(mm < 100){
-        ceze[mm] = 1.0
-        cezh[mm] = impedance
-    }
-    else if(mm < LOSS_LAYER){
-        ceze[mm] = 1.0
-        cezh[mm] = impedance / relativePermittivity
-    
-    }
-    else{
-        ceze[mm] = (1.0 - LOSS) / (1.0 + LOSS)
-        cezh[mm] = (impedance / relativePermittivity) / (1.0 + LOSS)
-    }
-}
+SetElectricFieldCoefficient(Size: SIZE, LOSS_LAYER: LOSS_LAYER, impedance: impedance,
+                            relativePermittivity: relativePermittivity, LOSS: LOSS)
 
 //set magnetic field coefficients
-for mm in 0..<(SIZE){
-    if(mm < LOSS_LAYER){
-        chyh[mm] = 1.0
-        chye[mm] = 1.0 / impedance
-    }
-    else{
-        chyh[mm] = (1.0 - LOSS) / (1.0 + LOSS)
-        chye[mm] = (1.0 / impedance) / (1.0 + LOSS)
-    }
-}
+SetMagneticFieldCoefficient(Size: SIZE, LOSS_LAYER: LOSS_LAYER,
+                            impedance: impedance, LOSS: LOSS)
 
 let fileout = FileWriter(fileName: "Electro.dat")
 fileout.write_data(data: "")
