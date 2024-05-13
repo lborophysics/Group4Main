@@ -19,8 +19,12 @@ var frame = 0
 let SIZE = 200
 let LOSS_LAYER = 180
 let LOSS = 0.02
-let relativePermittivity = 9.0
+var relativePermittivity = Array(repeating: 0.0, count: 200)
+var Epsr: Double = 0.0
 let impedance = 377.0
+let PermittivityFreeSpace = 8.85e-12
+
+let PermittivitySilicon = PermittivityFreeSpace * 11.7
 let total_steps = 450
 var materialData = ""
 
@@ -31,6 +35,19 @@ var cezh = Array(repeating: 0.0, count: SIZE)
 var chyh = Array(repeating: 0.0, count: SIZE)
 var chye = Array(repeating: 0.0, count: SIZE)
 
+
+for qtime in 0..<total_steps{
+    
+    for mm in 1..<SIZE{
+        
+         var Epsr = relativePermittivity[mm] = smoothTransitionDielectric(Double(total_steps), 40.0, 20.0, PermittivityFreeSpace, PermittivitySilicon)
+        
+    }
+    
+}
+
+
+
 //Initialise electric field
 InitialiseElectricField(Size: SIZE)
 
@@ -39,18 +56,26 @@ InitialiseMagneticField(Size: SIZE)
 
 //set electric field coefficients
 SetElectricFieldCoefficient(Size: SIZE, LOSS_LAYER: LOSS_LAYER, impedance: impedance,
-                            relativePermittivity: relativePermittivity, LOSS: LOSS)
+                            relativePermittivity: Epsr, LOSS: LOSS)
 
 //set magnetic field coefficients
 SetMagneticFieldCoefficient(Size: SIZE, LOSS_LAYER: LOSS_LAYER,
                             impedance: impedance, LOSS: LOSS)
 
 let fileout = FileWriter(fileName: "Material.dat")
-materialData = "Material: Loss " + String(LOSS) + " Relative Permittivity " + String(relativePermittivity)
+materialData = "Material: Loss " + String(LOSS) + " Relative Permittivity " + String(Epsr)
 fileout.write_data(data: "")
 fileout.append_data(data: materialData)
 
 for dt in 0..<total_steps {
+    
+    
+    
+    
+    
+    
+    
+    
     let dt_subtract30 = Double(dt) - 30.0
     
     // Update magnetic field

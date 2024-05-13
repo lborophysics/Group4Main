@@ -19,6 +19,8 @@ func InitialiseMagneticField(Size: Int){
     }
 }
 
+
+
 func SetElectricFieldCoefficient(Size:Int, LOSS_LAYER:Int, impedance:Double,
                                         relativePermittivity:Double, LOSS:Double){
     for mm in 0..<(SIZE){

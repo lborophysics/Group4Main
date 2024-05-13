@@ -13,6 +13,7 @@
 		7375A6FF2B8FA473004A4809 /* NewMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7375A6FE2B8FA473004A4809 /* NewMain.swift */; };
 		7375A7012B8FAAEB004A4809 /* FileWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7375A7002B8FAAEB004A4809 /* FileWriter.swift */; };
 		CD4784A62B83680B0009561B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4784A52B83680B0009561B /* main.swift */; };
+		CD5F888A2BF21365008B2ED0 /* Smoothing Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5F88892BF21365008B2ED0 /* Smoothing Function.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		7375A7002B8FAAEB004A4809 /* FileWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileWriter.swift; sourceTree = "<group>"; };
 		CD4784A22B83680B0009561B /* Group4Project */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Group4Project; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD4784A52B83680B0009561B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		CD5F88892BF21365008B2ED0 /* Smoothing Function.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Smoothing Function.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				7375A7002B8FAAEB004A4809 /* FileWriter.swift */,
 				7375A6FE2B8FA473004A4809 /* NewMain.swift */,
 				732E9BED2BD93D5400FEAFDD /* SetMagneticElectricCoefficients.swift */,
+				CD5F88892BF21365008B2ED0 /* Smoothing Function.swift */,
 			);
 			path = Group4Project;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				7325637B2B9F0E8500F9AE8F /* updating ez & hy.swift in Sources */,
 				7375A7012B8FAAEB004A4809 /* FileWriter.swift in Sources */,
 				CD4784A62B83680B0009561B /* main.swift in Sources */,
+				CD5F888A2BF21365008B2ED0 /* Smoothing Function.swift in Sources */,
 				7375A6FF2B8FA473004A4809 /* NewMain.swift in Sources */,
 				732E9BEE2BD93D5400FEAFDD /* SetMagneticElectricCoefficients.swift in Sources */,
 			);
