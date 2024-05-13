@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7300FC6B2B98CC8000E48132 /* generateSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7300FC6A2B98CC8000E48132 /* generateSnapshot.swift */; };
-		7325637B2B9F0E8500F9AE8F /* updating ez & hy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7325637A2B9F0E8500F9AE8F /* updating ez & hy.swift */; };
-		732E9BEE2BD93D5400FEAFDD /* SetMagneticElectricCoefficients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732E9BED2BD93D5400FEAFDD /* SetMagneticElectricCoefficients.swift */; };
+		7325637B2B9F0E8500F9AE8F /* updating functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7325637A2B9F0E8500F9AE8F /* updating functions.swift */; };
+		732E9BEE2BD93D5400FEAFDD /* Set coefficients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732E9BED2BD93D5400FEAFDD /* Set coefficients.swift */; };
 		7375A6FF2B8FA473004A4809 /* NewMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7375A6FE2B8FA473004A4809 /* NewMain.swift */; };
 		7375A7012B8FAAEB004A4809 /* FileWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7375A7002B8FAAEB004A4809 /* FileWriter.swift */; };
 		CD4784A62B83680B0009561B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4784A52B83680B0009561B /* main.swift */; };
@@ -40,8 +40,8 @@
 /* Begin PBXFileReference section */
 		7300FC6A2B98CC8000E48132 /* generateSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = generateSnapshot.swift; sourceTree = "<group>"; };
 		730955892B8CAF6300654917 /* Group4.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Group4.xcodeproj; path = ../../../Desktop/Group4/Group4.xcodeproj; sourceTree = "<group>"; };
-		7325637A2B9F0E8500F9AE8F /* updating ez & hy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "updating ez & hy.swift"; sourceTree = "<group>"; };
-		732E9BED2BD93D5400FEAFDD /* SetMagneticElectricCoefficients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetMagneticElectricCoefficients.swift; sourceTree = "<group>"; };
+		7325637A2B9F0E8500F9AE8F /* updating functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "updating functions.swift"; sourceTree = "<group>"; };
+		732E9BED2BD93D5400FEAFDD /* Set coefficients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Set coefficients.swift"; sourceTree = "<group>"; };
 		7375A6FE2B8FA473004A4809 /* NewMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMain.swift; sourceTree = "<group>"; };
 		7375A7002B8FAAEB004A4809 /* FileWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileWriter.swift; sourceTree = "<group>"; };
 		CD4784A22B83680B0009561B /* Group4Project */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Group4Project; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,12 +87,12 @@
 			isa = PBXGroup;
 			children = (
 				730955892B8CAF6300654917 /* Group4.xcodeproj */,
-				7325637A2B9F0E8500F9AE8F /* updating ez & hy.swift */,
+				7325637A2B9F0E8500F9AE8F /* updating functions.swift */,
 				7300FC6A2B98CC8000E48132 /* generateSnapshot.swift */,
 				CD4784A52B83680B0009561B /* main.swift */,
 				7375A7002B8FAAEB004A4809 /* FileWriter.swift */,
 				7375A6FE2B8FA473004A4809 /* NewMain.swift */,
-				732E9BED2BD93D5400FEAFDD /* SetMagneticElectricCoefficients.swift */,
+				732E9BED2BD93D5400FEAFDD /* Set coefficients.swift */,
 			);
 			path = Group4Project;
 			sourceTree = "<group>";
@@ -172,11 +172,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7300FC6B2B98CC8000E48132 /* generateSnapshot.swift in Sources */,
-				7325637B2B9F0E8500F9AE8F /* updating ez & hy.swift in Sources */,
+				7325637B2B9F0E8500F9AE8F /* updating functions.swift in Sources */,
 				7375A7012B8FAAEB004A4809 /* FileWriter.swift in Sources */,
 				CD4784A62B83680B0009561B /* main.swift in Sources */,
 				7375A6FF2B8FA473004A4809 /* NewMain.swift in Sources */,
-				732E9BEE2BD93D5400FEAFDD /* SetMagneticElectricCoefficients.swift in Sources */,
+				732E9BEE2BD93D5400FEAFDD /* Set coefficients.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

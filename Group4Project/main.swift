@@ -23,13 +23,17 @@ let relativePermittivity = 9.0
 let impedance = 377.0
 let total_steps = 450
 var materialData = ""
+let dt = 0.01
 
 var electric_field = Array(repeating: 0.0, count: SIZE)
 var magnetic_field = Array(repeating: 0.0, count: SIZE)
+var polarizationCurrent = Array(repeating: 0.0, count: SIZE)
 var ceze = Array(repeating: 0.0, count: SIZE)
 var cezh = Array(repeating: 0.0, count: SIZE)
 var chyh = Array(repeating: 0.0, count: SIZE)
 var chye = Array(repeating: 0.0, count: SIZE)
+
+
 
 //Initialise electric field
 InitialiseElectricField(Size: SIZE)
@@ -57,7 +61,10 @@ for dt in 0..<total_steps {
     update_magnetic(ez: electric_field, hy: &magnetic_field, imp0: impedance, dt_subtract30: dt_subtract30)
     
     // Update electric field
+    let temp_electric = electric_field
     update_electric(ez: &electric_field, hy: magnetic_field, imp0: impedance, dt_subtract30: dt_subtract30)
+    
+    update_polarizationCurrent(J: &polarizationCurrent, ez: electric_field, E_temp: temp_electric)
 
     generateSnapshot(dt: dt)
 }

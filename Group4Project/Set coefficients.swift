@@ -19,6 +19,12 @@ func InitialiseMagneticField(Size: Int){
     }
 }
 
+func InitialisePolarizationCurrent(Size: Int){
+    for mm in 0..<(SIZE - 1){
+        polarizationCurrent[mm] = 0.0
+    }
+}
+
 func SetElectricFieldCoefficient(Size:Int, LOSS_LAYER:Int, impedance:Double,
                                         relativePermittivity:Double, LOSS:Double){
     for mm in 0..<(SIZE){
