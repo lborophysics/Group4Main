@@ -1,4 +1,4 @@
-    //
+//
 //  main.swift
 //  Group4Tester
 //
@@ -6,36 +6,64 @@
 //
 import Foundation
 
+//definitions
+let electric_times_spatial_difference_magnetic = cezh
+let electric_times_previous_electric = ceze
+let magnetic_times_previous_magnetic = chyh
+let magnetic_times_spatial_difference_electric = chye
+
 // Variables
 let basename = "snapshot"
+let hardwireSourceNode = 50
 var frame = 0
 let SIZE = 200
-var ez = Array(repeating: 0.0, count: SIZE)
-var hy = Array(repeating: 0.0, count: SIZE)
-let imp0 = 377.0
-let maxTime = 250
+let LOSS_LAYER = 180
+let LOSS = 0.02
+let relativePermittivity = 9.0
+let impedance = 377.0
+let total_steps = 450
+var materialData = ""
 
-let fileout = FileWriter(fileName: "Electro.dat")
+var electric_field = Array(repeating: 0.0, count: SIZE)
+var magnetic_field = Array(repeating: 0.0, count: SIZE)
+var ceze = Array(repeating: 0.0, count: SIZE)
+var cezh = Array(repeating: 0.0, count: SIZE)
+var chyh = Array(repeating: 0.0, count: SIZE)
+var chye = Array(repeating: 0.0, count: SIZE)
+
+//Initialise electric field
+InitialiseElectricField(Size: SIZE)
+
+//Initialise magnetic field
+InitialiseMagneticField(Size: SIZE)
+
+//set electric field coefficients
+SetElectricFieldCoefficient(Size: SIZE, LOSS_LAYER: LOSS_LAYER, impedance: impedance,
+                            relativePermittivity: relativePermittivity, LOSS: LOSS)
+
+//set magnetic field coefficients
+SetMagneticFieldCoefficient(Size: SIZE, LOSS_LAYER: LOSS_LAYER,
+                            impedance: impedance, LOSS: LOSS)
+
+let fileout = FileWriter(fileName: "Material.dat")
+materialData = "Material: Loss " + String(LOSS) + " Relative Permittivity " + String(relativePermittivity)
 fileout.write_data(data: "")
+fileout.append_data(data: materialData)
 
-for qTime in 0..<maxTime {
-   // Update magnetic field
-   for mm in 0..<(SIZE - 1) {
-       hy[mm] += (ez[mm + 1] - ez[mm]) / imp0
-   }
+for dt in 0..<total_steps {
+    let dt_subtract30 = Double(dt) - 30.0
+    
+    // Update magnetic field
+    update_magnetic(ez: electric_field, hy: &magnetic_field, imp0: impedance, dt_subtract30: dt_subtract30)
+    
+    // Update electric field
+    update_electric(ez: &electric_field, hy: magnetic_field, imp0: impedance, dt_subtract30: dt_subtract30)
 
-   // Update electric field
-   for mm in 1..<SIZE {
-       ez[mm] += (hy[mm] - hy[mm - 1]) * imp0
-   }
-
-   // Hardwire a source node
-   ez[0] = exp(-(Double(qTime) - 30.0) * (Double(qTime) - 30.0) / 100.0)
-
-    generateSnapshot(qTime: qTime)
-
-    fileout.append_data(data: "\(ez[50])\n")
+    generateSnapshot(dt: dt)
 }
 
 
+ 
+
+ 
  
