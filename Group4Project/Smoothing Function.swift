@@ -25,7 +25,7 @@ func sigmoidFunction(_ t: Double, _ startTime: Double, _ transitionTime: Double)
     }
 }
 
-public func smoothTransitionDielectric(_ t: Double, _ startTime: Double, _ transitionTime: Double, _ initialEpsilon: Double, _ finalEpsilon: Double) -> Double {
+public func smoothTransitionDielectric(currentTime t: Double, _ startTime: Double, _ transitionTime: Double, _ initialEpsilon: Double, _ finalEpsilon: Double) -> Double {
     let sigmoid = sigmoidFunction(t, startTime, transitionTime)
     return initialEpsilon + sigmoid * (finalEpsilon - initialEpsilon)
 }
