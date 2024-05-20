@@ -61,10 +61,11 @@ for dt in 0..<total_steps {
     update_magnetic(ez: electric_field, hy: &magnetic_field, imp0: impedance, dt_subtract30: dt_subtract30)
     
     // Update electric field
-    let temp_electric = electric_field
     update_electric(ez: &electric_field, hy: magnetic_field, imp0: impedance, dt_subtract30: dt_subtract30)
-    
-    update_polarizationCurrent(J: &polarizationCurrent, ez: electric_field, E_temp: temp_electric)
+
+    // update with polarization current
+    let temp_electric = electric_field
+    update_w_polarizationCurrent(J: &polarizationCurrent, ez: &electric_field, E_temp: temp_electric, hy: magnetic_field, dt_subtract30: dt_subtract30)
 
     generateSnapshot(dt: dt)
 }
