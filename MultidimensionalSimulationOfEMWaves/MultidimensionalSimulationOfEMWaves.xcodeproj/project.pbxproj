@@ -1,0 +1,349 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B2EC9E532BFD07350095A9AA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EC9E522BFD07350095A9AA /* main.swift */; };
+		B2EC9E692BFD07B60095A9AA /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EC9E592BFD07B60095A9AA /* Global.swift */; };
+		B2EC9E6A2BFD07B60095A9AA /* oneOrtwo?.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EC9E5A2BFD07B60095A9AA /* oneOrtwo?.swift */; };
+		B2EC9E6B2BFD07B60095A9AA /* Grid2d.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EC9E5B2BFD07B60095A9AA /* Grid2d.swift */; };
+		B2EC9E6C2BFD07B60095A9AA /* Log+Normalisation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EC9E5C2BFD07B60095A9AA /* Log+Normalisation.swift */; };
+		B2EC9E6D2BFD07B60095A9AA /* Filewriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EC9E5D2BFD07B60095A9AA /* Filewriter.swift */; };
+		B2EC9E6E2BFD07B60095A9AA /* updateEquations.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EC9E5E2BFD07B60095A9AA /* updateEquations.swift */; };
+		B2EC9E6F2BFD07B60095A9AA /* initilisation_coefficients1D.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EC9E5F2BFD07B60095A9AA /* initilisation_coefficients1D.swift */; };
+		B2EC9E702BFD07B60095A9AA /* SmoothingFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EC9E602BFD07B60095A9AA /* SmoothingFunctions.swift */; };
+		B2EC9E712BFD07B60095A9AA /* 2DTFSFupdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EC9E612BFD07B60095A9AA /* 2DTFSFupdate.swift */; };
+		B2EC9E722BFD07B60095A9AA /* Snaphot functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EC9E622BFD07B60095A9AA /* Snaphot functions.swift */; };
+		B2EC9E732BFD07B60095A9AA /* Update coefficient 1dAUxillatu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EC9E632BFD07B60095A9AA /* Update coefficient 1dAUxillatu.swift */; };
+		B2EC9E742BFD07B60095A9AA /* ABCgrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EC9E642BFD07B60095A9AA /* ABCgrid.swift */; };
+		B2EC9E752BFD07B60095A9AA /* ABCFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EC9E652BFD07B60095A9AA /* ABCFunction.swift */; };
+		B2EC9E762BFD07B60095A9AA /* UpdateElectricMagneticCoefficients.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EC9E662BFD07B60095A9AA /* UpdateElectricMagneticCoefficients.swift */; };
+		B2EC9E772BFD07B60095A9AA /* waveguideBoundary.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EC9E672BFD07B60095A9AA /* waveguideBoundary.swift */; };
+		B2EC9E782BFD07B60095A9AA /* EZCRicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EC9E682BFD07B60095A9AA /* EZCRicker.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B2EC9E4D2BFD07350095A9AA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B2EC9E4F2BFD07350095A9AA /* MultidimensionalSimulationOfEMWaves */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MultidimensionalSimulationOfEMWaves; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2EC9E522BFD07350095A9AA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		B2EC9E592BFD07B60095A9AA /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		B2EC9E5A2BFD07B60095A9AA /* oneOrtwo?.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "oneOrtwo?.swift"; sourceTree = "<group>"; };
+		B2EC9E5B2BFD07B60095A9AA /* Grid2d.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grid2d.swift; sourceTree = "<group>"; };
+		B2EC9E5C2BFD07B60095A9AA /* Log+Normalisation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Log+Normalisation.swift"; sourceTree = "<group>"; };
+		B2EC9E5D2BFD07B60095A9AA /* Filewriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filewriter.swift; sourceTree = "<group>"; };
+		B2EC9E5E2BFD07B60095A9AA /* updateEquations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = updateEquations.swift; sourceTree = "<group>"; };
+		B2EC9E5F2BFD07B60095A9AA /* initilisation_coefficients1D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = initilisation_coefficients1D.swift; sourceTree = "<group>"; };
+		B2EC9E602BFD07B60095A9AA /* SmoothingFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmoothingFunctions.swift; sourceTree = "<group>"; };
+		B2EC9E612BFD07B60095A9AA /* 2DTFSFupdate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 2DTFSFupdate.swift; sourceTree = "<group>"; };
+		B2EC9E622BFD07B60095A9AA /* Snaphot functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Snaphot functions.swift"; sourceTree = "<group>"; };
+		B2EC9E632BFD07B60095A9AA /* Update coefficient 1dAUxillatu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Update coefficient 1dAUxillatu.swift"; sourceTree = "<group>"; };
+		B2EC9E642BFD07B60095A9AA /* ABCgrid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABCgrid.swift; sourceTree = "<group>"; };
+		B2EC9E652BFD07B60095A9AA /* ABCFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABCFunction.swift; sourceTree = "<group>"; };
+		B2EC9E662BFD07B60095A9AA /* UpdateElectricMagneticCoefficients.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateElectricMagneticCoefficients.swift; sourceTree = "<group>"; };
+		B2EC9E672BFD07B60095A9AA /* waveguideBoundary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = waveguideBoundary.swift; sourceTree = "<group>"; };
+		B2EC9E682BFD07B60095A9AA /* EZCRicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EZCRicker.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B2EC9E4C2BFD07350095A9AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B2EC9E462BFD07350095A9AA = {
+			isa = PBXGroup;
+			children = (
+				B2EC9E512BFD07350095A9AA /* MultidimensionalSimulationOfEMWaves */,
+				B2EC9E502BFD07350095A9AA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B2EC9E502BFD07350095A9AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2EC9E4F2BFD07350095A9AA /* MultidimensionalSimulationOfEMWaves */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B2EC9E512BFD07350095A9AA /* MultidimensionalSimulationOfEMWaves */ = {
+			isa = PBXGroup;
+			children = (
+				B2EC9E522BFD07350095A9AA /* main.swift */,
+				B2EC9E612BFD07B60095A9AA /* 2DTFSFupdate.swift */,
+				B2EC9E652BFD07B60095A9AA /* ABCFunction.swift */,
+				B2EC9E642BFD07B60095A9AA /* ABCgrid.swift */,
+				B2EC9E682BFD07B60095A9AA /* EZCRicker.swift */,
+				B2EC9E5D2BFD07B60095A9AA /* Filewriter.swift */,
+				B2EC9E592BFD07B60095A9AA /* Global.swift */,
+				B2EC9E5B2BFD07B60095A9AA /* Grid2d.swift */,
+				B2EC9E5F2BFD07B60095A9AA /* initilisation_coefficients1D.swift */,
+				B2EC9E5C2BFD07B60095A9AA /* Log+Normalisation.swift */,
+				B2EC9E5A2BFD07B60095A9AA /* oneOrtwo?.swift */,
+				B2EC9E602BFD07B60095A9AA /* SmoothingFunctions.swift */,
+				B2EC9E622BFD07B60095A9AA /* Snaphot functions.swift */,
+				B2EC9E632BFD07B60095A9AA /* Update coefficient 1dAUxillatu.swift */,
+				B2EC9E662BFD07B60095A9AA /* UpdateElectricMagneticCoefficients.swift */,
+				B2EC9E5E2BFD07B60095A9AA /* updateEquations.swift */,
+				B2EC9E672BFD07B60095A9AA /* waveguideBoundary.swift */,
+			);
+			path = MultidimensionalSimulationOfEMWaves;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B2EC9E4E2BFD07350095A9AA /* MultidimensionalSimulationOfEMWaves */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2EC9E562BFD07350095A9AA /* Build configuration list for PBXNativeTarget "MultidimensionalSimulationOfEMWaves" */;
+			buildPhases = (
+				B2EC9E4B2BFD07350095A9AA /* Sources */,
+				B2EC9E4C2BFD07350095A9AA /* Frameworks */,
+				B2EC9E4D2BFD07350095A9AA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MultidimensionalSimulationOfEMWaves;
+			productName = MultidimensionalSimulationOfEMWaves;
+			productReference = B2EC9E4F2BFD07350095A9AA /* MultidimensionalSimulationOfEMWaves */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B2EC9E472BFD07350095A9AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					B2EC9E4E2BFD07350095A9AA = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = B2EC9E4A2BFD07350095A9AA /* Build configuration list for PBXProject "MultidimensionalSimulationOfEMWaves" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B2EC9E462BFD07350095A9AA;
+			productRefGroup = B2EC9E502BFD07350095A9AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B2EC9E4E2BFD07350095A9AA /* MultidimensionalSimulationOfEMWaves */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B2EC9E4B2BFD07350095A9AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2EC9E742BFD07B60095A9AA /* ABCgrid.swift in Sources */,
+				B2EC9E702BFD07B60095A9AA /* SmoothingFunctions.swift in Sources */,
+				B2EC9E712BFD07B60095A9AA /* 2DTFSFupdate.swift in Sources */,
+				B2EC9E762BFD07B60095A9AA /* UpdateElectricMagneticCoefficients.swift in Sources */,
+				B2EC9E6E2BFD07B60095A9AA /* updateEquations.swift in Sources */,
+				B2EC9E752BFD07B60095A9AA /* ABCFunction.swift in Sources */,
+				B2EC9E692BFD07B60095A9AA /* Global.swift in Sources */,
+				B2EC9E772BFD07B60095A9AA /* waveguideBoundary.swift in Sources */,
+				B2EC9E6A2BFD07B60095A9AA /* oneOrtwo?.swift in Sources */,
+				B2EC9E6D2BFD07B60095A9AA /* Filewriter.swift in Sources */,
+				B2EC9E532BFD07350095A9AA /* main.swift in Sources */,
+				B2EC9E6B2BFD07B60095A9AA /* Grid2d.swift in Sources */,
+				B2EC9E722BFD07B60095A9AA /* Snaphot functions.swift in Sources */,
+				B2EC9E6C2BFD07B60095A9AA /* Log+Normalisation.swift in Sources */,
+				B2EC9E6F2BFD07B60095A9AA /* initilisation_coefficients1D.swift in Sources */,
+				B2EC9E782BFD07B60095A9AA /* EZCRicker.swift in Sources */,
+				B2EC9E732BFD07B60095A9AA /* Update coefficient 1dAUxillatu.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B2EC9E542BFD07350095A9AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B2EC9E552BFD07350095A9AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		B2EC9E572BFD07350095A9AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B2EC9E582BFD07350095A9AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B2EC9E4A2BFD07350095A9AA /* Build configuration list for PBXProject "MultidimensionalSimulationOfEMWaves" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2EC9E542BFD07350095A9AA /* Debug */,
+				B2EC9E552BFD07350095A9AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2EC9E562BFD07350095A9AA /* Build configuration list for PBXNativeTarget "MultidimensionalSimulationOfEMWaves" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2EC9E572BFD07350095A9AA /* Debug */,
+				B2EC9E582BFD07350095A9AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B2EC9E472BFD07350095A9AA /* Project object */;
+}
